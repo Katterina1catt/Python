@@ -5,9 +5,7 @@
 m=int(input("Введите ширину шоколадки: "))
 n=int(input("Введите длину шоколадки: "))
 k=int(input("Введите количество долек: "))
-if m*n<k:
-     print("No")
-elif k%n==0 or k%m==0:
+if m*n<k and (k%n==0 or k%m==0):
     print("Yes")
 else:
     print("No")
